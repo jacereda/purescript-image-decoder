@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "purescript-image-decoder",
+  "dependencies": {
+    "purescript-png-decoder": "jacereda/purescript-png-decoder#master",
+    "purescript-jpeg-decoder": "jacereda/purescript-jpeg-decoder#master"
+  }
+}

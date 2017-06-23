@@ -1,0 +1,20 @@
+{
+  "name": "purescript-image-decoder",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-png-decoder": "jacereda/purescript-png-decoder#master",
+    "purescript-jpeg-decoder": "jacereda/purescript-jpeg-decoder#master",      
+    "purescript-prelude": "^3.0.0",
+    "purescript-arraybuffer-types": "^1.0.0"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^3.0.0",
+    "purescript-affjax": "^4.0.0",
+    "purescript-debug": "^3.0.0"
+  }
+}
