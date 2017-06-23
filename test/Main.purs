@@ -24,14 +24,10 @@ main = void $ launchAff do
           Just h -> Right $ responseHeaderValue h
           Nothing -> Left $ error "missing content-type"
         dec :: AffjaxResponse ArrayBuffer -> Either Error Image
-        dec d = case MediaType <$> contentType d.headers of
-          Right mt -> decode d.response mt
-          Left e -> Left e
+        dec d = MediaType <$> contentType d.headers >>= decode d.response
         tst url = do
           response <- attempt $ get url
           case response of
             Left err -> log $ "Failed to fetch image: " <> show err
-            Right res -> do
-              logShow $ dec res
-              pure unit
+            Right res -> logShow $ dec res
           pure unit
