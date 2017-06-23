@@ -22,4 +22,4 @@ decode ab mt =
   Image <$> case mt of
     (MediaType "image/png") -> PNG.decode ab
     (MediaType "image/jpeg") -> JPEG.decode ab
-    _ -> Left $ error "Unsupported image format"
+    t -> Left $ error $ "Unsupported image format: " <> show t
