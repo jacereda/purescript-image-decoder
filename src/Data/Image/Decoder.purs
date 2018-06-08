@@ -3,7 +3,7 @@ module Data.Image.Decoder where
 import Prelude
 import Data.Image.JPEG.Decoder as JPEG
 import Data.Image.PNG.Decoder as PNG
-import Control.Monad.Eff.Exception (Error, error)
+import Effect.Exception (Error, error)
 import Data.ArrayBuffer.Types (ArrayBuffer)
 import Data.Either (Either(..))
 import Data.MediaType (MediaType(..))

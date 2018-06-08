@@ -8,13 +8,12 @@
   ],
   "dependencies": {
     "purescript-png-decoder": "jacereda/purescript-png-decoder#master",
-    "purescript-jpeg-decoder": "jacereda/purescript-jpeg-decoder#master",      
-    "purescript-prelude": "^3.0.0",
-    "purescript-arraybuffer-types": "^1.0.0"
+    "purescript-jpeg-decoder": "jacereda/purescript-jpeg-decoder#master"
   },
   "devDependencies": {
-    "purescript-psci-support": "^3.0.0",
-    "purescript-affjax": "^4.0.0",
-    "purescript-debug": "^3.0.0"
+    "purescript-prelude": "^4.0.1",
+    "purescript-psci-support": "^4.0.0",
+    "purescript-affjax": "^6.0.0",
+    "purescript-debug": "^4.0.0"
   }
 }
